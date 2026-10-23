@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milky Shake - Enlaces</title>
+    <!-- Cargando fuentes divertidas y modernas -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Cargando Tailwind CSS para los estilos de la página -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de colores personalizados para Milky Shake -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        fun: ['Fredoka', 'sans-serif'], // Tipografía divertida para la heladería
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#FFF5F8', // Rosa pastel muy suave para el fondo
+                            text: '#333333', // Gris oscuro para legibilidad
+                            pink: '#F381A7', // Rosa inspirado en el logo
+                            blue: '#3EBAE1', // Azul inspirado en el logo
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* CSS adicional para asegurar transiciones suaves y evitar comportamientos raros en móviles */
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+        .link-button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .link-button:hover, .link-button:active {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-brand-bg text-brand-text min-h-screen flex flex-col items-center py-12 px-6">
+
+    <!-- Contenedor Principal (ancho máximo para mantener estilo móvil en pantallas grandes) -->
+    <main class="w-full max-w-md flex flex-col items-center">
+        
+        <!-- Logo de la Heladería -->
+        <img src="logo.jpg" alt="Milky Shake Logo" style="max-width: 250px; margin-bottom: 20px;" class="drop-shadow-md rounded-2xl">
+
+        <!-- Título y Descripción -->
+        <h1 class="text-4xl font-bold mb-2 tracking-tight font-fun text-brand-pink drop-shadow-sm">Milky Shake</h1>
+        <p class="text-center font-medium opacity-80 mb-8 px-4 font-fun text-lg text-brand-blue">
+            ¡Tu heladería favorita! 🍦✨
+        </p>
+
+        <!-- Contenedor de Botones de Enlace -->
+        <div class="w-full space-y-4">
+            
+            <!-- Botón 1: Ubicación -->
+            <a href="https://maps.app.goo.gl/Ya35iPGkXWG99w9w7" target="_blank" rel="noopener noreferrer" 
+               class="link-button flex items-center justify-center w-full py-4 px-6 bg-brand-blue text-white rounded-2xl shadow-md hover:bg-brand-pink transition-colors duration-300 text-xl font-semibold font-fun tracking-wide">
+                <span class="mr-2 text-2xl">📍</span> Ubicación
+            </a>
+
+            <!-- Botón 2: Instagram -->
+            <a href="https://www.instagram.com/milkyshaketaste" target="_blank" rel="noopener noreferrer" 
+               class="link-button flex items-center justify-center w-full py-4 px-6 bg-brand-pink text-white rounded-2xl shadow-md hover:bg-brand-blue transition-colors duration-300 text-xl font-semibold font-fun tracking-wide">
+                <span class="mr-2 text-2xl">📸</span> Instagram
+            </a>
+
+            <!-- Botón 3: Facebook -->
+            <a href="https://www.facebook.com/share/14mEXcjgDEk/" target="_blank" rel="noopener noreferrer" 
+               class="link-button flex items-center justify-center w-full py-4 px-6 bg-brand-blue text-white rounded-2xl shadow-md hover:bg-brand-pink transition-colors duration-300 text-xl font-semibold font-fun tracking-wide">
+                <span class="mr-2 text-2xl">👍</span> Facebook
+            </a>
+
+            <!-- Botón 4: WhatsApp -->
+            <a href="https://wa.me/13467366181" target="_blank" rel="noopener noreferrer" 
+               class="link-button flex items-center justify-center w-full py-4 px-6 bg-brand-pink text-white rounded-2xl shadow-md hover:bg-brand-blue transition-colors duration-300 text-xl font-semibold font-fun tracking-wide mt-6">
+                <span class="mr-2 text-2xl">💬</span> WhatsApp
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="mt-auto pt-12 text-sm font-medium opacity-60 font-fun">
+    <!-- Pie de página -->
+    <footer class="mt-auto pt-12 text-sm font-medium opacity-60">
+        © 2026 Milky Shake. Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
